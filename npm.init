@@ -1,0 +1,7 @@
+npm init -y
+npm install express --save
+npm install mocha --save-dev
+npm install chai --save-dev
+npm install supertest --save-dev
+npm install body-parser --save 
+echo "node_modules/" > .gitignore

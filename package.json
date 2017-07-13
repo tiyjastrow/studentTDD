@@ -1,0 +1,32 @@
+{
+  "name": "studentTDD",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api.js",
+  "scripts": {
+    "start": "nodemon api.js",
+    "test": "mocha",
+    "stop": "node api.js",
+    "start-in-background": "node api.js & ",
+    "learncode": "code ./api.js",
+    "prelearncode": "echo GO TO THE IRON YARD",
+    "postlearncode": "echo GET AN AWESOME JOB!",
+    "git-status": "git status; echo PRESS ENTER TO CONTINUE..; read dummy; echo Continuing...",
+    "git-commit": "npm run git-status; git add -A . && git commit -a -m 'Add commit from scripts'",
+    "git-push": "echo DOING: git push origin master",
+    "deploy": "npm run git-commit && npm run git-push",
+    "filelist": "ls -l > filelist; less filelist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2",
+    "supertest": "^3.0.0"
+  }
+}
