@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const db = require("./test/fakeDb");  // replace with real db
 const bodyParser = require("body-parser");
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
@@ -15,9 +16,9 @@ app.post("/api/students", function(req,res){
     res.status(201).json( {"student": savedStudent} );
 });
 
-app.listen(3000, function(){
+app.listen(port, function(){
     db.reset();
-    console.log("Started on PORT 3000...");
+    console.log(`Started on PORT ${port}...`);
 });
 
 module.exports = app;
